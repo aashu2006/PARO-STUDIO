@@ -35,6 +35,9 @@ export function Footer() {
               <li>
                 <Link to="/upload" className="hover:text-foreground transition-colors">Create Prompt</Link>
               </li>
+              <li>
+                <Link to="/community-guidelines" className="hover:text-foreground transition-colors">Community Guidelines</Link>
+              </li>
             </ul>
           </div>
 

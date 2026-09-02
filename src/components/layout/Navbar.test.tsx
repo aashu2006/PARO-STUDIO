@@ -65,6 +65,10 @@ describe("Navbar Dropdown Menus", () => {
     const span = earnLink.querySelector("span");
     expect(span?.className).toContain("group-hover:text-black");
     expect(span?.className).toContain("group-focus:text-black");
+
+    // Check Community Guidelines link rendered
+    const guidelinesLinks = screen.getAllByRole("menuitem").filter(item => item.getAttribute("href") === "/community-guidelines");
+    expect(guidelinesLinks.length).toBeGreaterThan(0);
   });
 
   it("renders PARO Originals and Earn With PARO links with hover text contrast classes in mobile dropdown", async () => {
@@ -110,5 +114,9 @@ describe("Navbar Dropdown Menus", () => {
     const earnSpan = earnLink.querySelector("span");
     expect(earnSpan?.className).toContain("group-hover:text-black");
     expect(earnSpan?.className).toContain("group-focus:text-black");
+
+    // Check Community Guidelines link
+    const guidelinesLinks = screen.getAllByRole("menuitem").filter(item => item.getAttribute("href") === "/community-guidelines");
+    expect(guidelinesLinks.length).toBeGreaterThan(0);
   });
 });

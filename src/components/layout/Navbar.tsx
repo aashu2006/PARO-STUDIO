@@ -190,9 +190,11 @@ export function Navbar({ onSearch, searchQuery = "", sortBy, onSortChange, showF
                         Feedback
                       </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem onClick={() => {}} className="flex items-center gap-2">
-                      <FileText className="h-4 w-4" />
-                      Community Guidelines
+                    <DropdownMenuItem asChild>
+                      <Link to="/community-guidelines" className="flex items-center gap-2">
+                        <FileText className="h-4 w-4" />
+                        Community Guidelines
+                      </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <a
@@ -335,9 +337,11 @@ export function Navbar({ onSearch, searchQuery = "", sortBy, onSortChange, showF
                         Feedback
                       </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem onClick={() => {}} className="flex items-center gap-2">
-                      <FileText className="h-4 w-4" />
-                      Community Guidelines
+                    <DropdownMenuItem asChild>
+                      <Link to="/community-guidelines" className="flex items-center gap-2">
+                        <FileText className="h-4 w-4" />
+                        Community Guidelines
+                      </Link>
                     </DropdownMenuItem>
                     <DropdownMenuSeparator />
 
